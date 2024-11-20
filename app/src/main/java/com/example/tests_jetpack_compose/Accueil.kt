@@ -44,6 +44,9 @@ fun AcceuilScreen() {
                 composable("podometre") {
                     PodometreScreen() // Page Podomètre
                 }
+                composable("stockage") {
+                    StockageScreen() // Page Podomètre
+                }
             }
         }
     )
@@ -81,6 +84,8 @@ fun DrawerMenuItem(text: String, navController: NavController) {
                     navController.navigate("podometre")
                 } else if (text == "Accueil") {
                     navController.navigate("home")
+                } else if (text == "Stocker les données") {
+                    navController.navigate("stockage")
                 }
                 // Ajoute ici la navigation pour les autres éléments si besoin
             }
